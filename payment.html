@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+
+<body>
+    <section class="payment" id="paymeny">
+        <h1>Payment Page</h1>
+
+
+        <div class="container" id="paymentContainer">
+            <form id="paymentForm" action="process_payment.php" method="POST">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardName">Cardholder Name:</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="Enter cardholder name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                </div>
+
+                <input type="submit" value="Pay Now" onclick="displayAlert()">
+            </form>
+        </div>
+    </section>
+
+
+    <script src=" script.js"></script>
+</body>
+
+</html>
