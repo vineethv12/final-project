@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> coffee bar website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom js file -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo1.jpg" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <a href="#" class="btn" onclick="openPaymentForm()">checkout now</a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>A LOT CAN HAPPEN OVER COFFEE</h3>
+            <p>Coffee is so good that your taste buds will love it!!</p>
+            <a href="#" class="btn">get yours now</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/aboutt.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>what makes our coffee special?</h3>
+                <p>The first thing that comes to mind when thinking about special coffee is its advanced quality. The
+                    flavors hidden in a cup of coffee are rich and crisp, and this comes not just from the quality of
+                    the specialty coffee beans, but from the work ethic and dedication put into it.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our <span>menu</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-name="p1" id="item1">
+                <img src="images/pic1.jpg" alt="" class="product-img">
+                <h3 class="product-title">Latte</h3>
+                <div class="price">$130.99 <span>150.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+            <div class="box" data-name="p2" id="item2">
+                <img src="images/pic2.jpg" alt="" class="product-img">
+                <h3 class="product-title">Espresso</h3>
+                <div class="price">$100.99 <span>120.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+            <div class="box" data-name="p3" id="item3">
+                <img src="images/pic3.jpg" alt="" class="product-img">
+                <h3 class="product-title">Cappuccino</h3>
+                <div class="price">$120.99 <span>150.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+            <div class="box" data-name="p4" id="item4">
+                <img src="images/pic4.jpg" alt="" class="product-img">
+                <h3 class="product-title">Borgia</h3>
+                <div class="price">$180.99 <span>200</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+            <div class="box" data-name="p5" id="item5">
+                <img src="images/pic5.jpg" alt="" class="product-img">
+                <h3 class="product-title">Vienna Mocha</h3>
+                <div class="price">$299.99 <span>320.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+            <div class="box" data-name="p6" id="item6">
+                <img src="images/pic6.jpg" alt="" class="product-img">
+                <h3 class="product-title">Irish Coffee</h3>
+                <div class="price">$140.99 <span>150.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+            <div class="box" data-name="p7" id="item7">
+                <img src="images/pic7.jpg" alt="" class="product-img">
+                <h3 class="product-title">Cold Brew</h3>
+                <div class="price">$150.99 <span>180.99</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+            <div class="box" data-name="p8" id="item8">
+                <img src="images/pic8.jpg" alt="" class="product-img">
+                <h3 class="product-title">Nitro Cold Brew</h3>
+                <div class="price">$190.99 <span>200</span></div>
+                <button type="button" class="pbtn">add to cart</button>
+            </div>
+
+        </div>
+
+        <div class="view-product">
+
+            <div class="view" data-target="p1">
+                <i class="fas fa-times"></i>
+                <img src="images/pic1.jpg" alt="">
+                <h3>Latte</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span> A latte begins with the same base — a single or double shot of espresso. This espresso
+                    is then
+                    combined with several ounces of steamed milk to create a rich, creamy beverage that has a more
+                    subtle espresso taste<span>"</span></p>
+                <div class="price">$130.99 <span>150.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p2">
+                <i class="fas fa-times"></i>
+                <img src="images/pic2.jpg" alt="">
+                <h3>Espresso</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>Our espresso is crafted with care and precision to deliver a delightful and robust
+                    coffee
+                    experience.<span>"</span></p>
+                <div class="price">$100.99 <span>120.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p3">
+                <i class="fas fa-times"></i>
+                <img src="images/pic3.jpg" alt="">
+                <h3>Cappuccino</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>Baristas meticulously craft each cappuccino to deliver a harmonious combination of rich
+                    espresso, silky steamed milk, and frothy
+                    milk foam.<span>"</span> </p>
+                <div class="price">$120.99 <span>150.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+
+
+            </div>
+
+            <div class="view" data-target="p4">
+                <i class="fas fa-times"></i>
+                <img src="images/pic4.jpg" alt="">
+                <h3>Borgia</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>The Borgia is a delightful variation of a classic hot chocolate, infused with the
+                    irresistible
+                    flavors of orange and
+                    espresso<span>"</span> </p>
+
+                <div class="price">$180.99 <span>200</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p5">
+                <i class="fas fa-times"></i>
+                <img src="images/pic5.jpg" alt="">
+                <h3>Vienna Mocha</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>The Vienna Mocha is a classic coffee beverage that combines the flavors of smooth
+                    espresso, decadent
+                    chocolate, and a
+                    touch of whipped cream.<span>"</span></p>
+                <div class="price">$299.99 <span>320.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p6">
+                <i class="fas fa-times"></i>
+                <img src="images/pic6.jpg" alt="">
+                <h3>Irish Coffee</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>The Irish Coffee is a classic and beloved beverage that combines the rich flavors of
+                    coffee, Irish
+                    whiskey, brown sugar,
+                    and a creamy topping.<span>"</span></p>
+
+                <div class="price">$140.99 <span>150.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p7">
+                <i class="fas fa-times"></i>
+                <img src="images/pic7.jpg" alt="">
+                <h3>Cold Brew</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>Cold Brew is a specialty coffee beverage that is steeped in cold water over an extended
+                    period, resulting in a uniquely
+                    smooth and less acidic flavor profile.<span>"</span></p>
+
+                <div class="price">$150.99 <span>180.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+
+            <div class="view" data-target="p8">
+                <i class="fas fa-times"></i>
+                <img src="images/pic8.jpg" alt="">
+                <h3>Nitro Cold Brew</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <p><span>"</span>Nitro Cold Brew is a unique and captivating coffee beverage that combines the
+                    smoothness of cold brew coffee with the
+                    delightful texture and cascade of nitrogen bubbles.<span>"</span> </p>
+                <div class="price">$130.99 <span>150.99</span></div>
+                <div class="buttons">
+                    <button type="button" class="buy" onclick="openPaymentForm()">buy now</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- menu section ends -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span>products</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$149.99 <span>$200</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$149.99 <span>$200</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$149.99 <span>$200</span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> customer's <span>review</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>I would probably say that this coffee shop is a must for coffee lovers! The service was good, and the
+                    variety of coffee served in the ambiance was very satisfying. If you like your coffee shops, then
+                    this is a must-visit! We will be back again!</p>
+                <p> </p>
+
+                <img src="images/r1.jpg" class="user" alt="">
+                <h3>Charan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>This coffee shop is my favorite place to hang and do my works. I really like this place because it
+                    has a good ambiance and not too crowded as well. The coffee and pastries that they had were so
+                    delicious. The barista was so friendly and pleasant to talk with. One thing that I got fascinated by
+                    this place. They had the most affordable and delicious coffee in town.</p>
+                <img src="images/r2.jpg" class="user" alt="">
+                <h3>Siri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p> Unquestionably, the best coffee shop in the area! I’m so thankful that finally, I was able to find
+                    this spot for some good coffee just in time. The atmosphere inside this coffee shop was very vibrant
+                    and relaxing. I will definitely rate them a five-star for everything that they provided. Truly
+                    amazing! Thank you so much, guys!</p>
+                <img src="images/r3.jpg" class="user" alt="">
+                <h3>john </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us </h1>
+
+        <div class="row">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17571.445350575483!2d76.60739269988433!3d12.321993857050384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1669304425311!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="number">
+                </div>
+                <input type="submit" value="contact now" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="credit">created by <span></span></div>
+
+    </section>
+
+    footer section ends
+
+</body>
+
+</html>
